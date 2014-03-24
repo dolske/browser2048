@@ -1,0 +1,150 @@
+<!--
+I ripped this code off from usvsthem:
+  http://games.usvsth3m.com/2048-doctor-who-edition/
+who, in turn, had written....
+
+We ripped this code off from Gabriele Cirulli, who was nice enough
+to MIT-license it. Thank you! Therefore, we've MIT-licensed this,
+APART FROM:
+
+THE IMAGES OF THE DOCTORS, which are from our archives
+and still under copyright.
+THE UVT SHARING CODE, which is pulled in from elsewhere
+and which we can't MIT license.
+
+The star background is from NASA:
+http://www.jpl.nasa.gov/spaceimages/wallpaper.php?id=PIA14872
+
+Love, UsVsTh3m
+
+
+PS:
+I KNOW THAT'S NOT WHAT THE BLINOVITCH LIMITATION EFFECT DOES AND I DON'T CARE
+also, I keep reading it as "police pubic call box"
+
+
+The MIT License (MIT)
+
+Copyright (c) 2014 Gabriele Cirulli
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+
+
+-->
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+
+  <title>2048: Web Browser Edition</title>
+
+  <link href="main.css" rel="stylesheet" type="text/css">
+  <link href="css.css" rel="stylesheet" type="text/css">
+<meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0, maximum-scale=1, user-scalable=no, minimal-ui">
+
+<script>
+var doctor_so_far = 1;
+
+function tweet() {
+}
+
+function facebook() {
+}
+</script>
+
+</head>
+<body><div id="uvt_over"><div id="uvt_box">
+  <div class="container">
+    <div class="heading">
+      <h1 class="title">2048: Web&nbsp;Browser&nbsp;Edition</h1>
+      <div class="scores-container">
+        <div class="score-container">0</div>
+        <div class="best-container">6528</div>
+      </div>
+    </div>
+
+    <div class="game-container">
+      <div class="game-message">
+        <p></p>
+        <div class="lower">
+          <a class="retry-button">Try again</a>
+        </div>
+      </div>
+
+      <div class="grid-container">
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+      </div>
+
+      <div class="tile-container"><div class="tile tile-2 tile-position-1-3 tile-new"><div class="tile-inner">2</div></div><div class="tile tile-2 tile-position-4-2 tile-new"><div class="tile-inner">2</div></div></div>
+    </div>
+
+    <p class="game-explanation">
+
+<strong class="important">How to play:</strong> Use your <strong>arrow keys</strong> to move the Browsers.
+<br> When two identical Browsers touch, the power of web standards interoperability
+will <strong>merge them into a newer Browser!</strong>
+    </p>
+    <hr>
+    <p>
+A complete ripoff of <a href="http://games.usvsth3m.com/2048-doctor-who-edition/">Us Vs Th3m's</a> complete
+ripoff of <a href="http://gabrielecirulli.com">Gabriele Cirulli's</a> MIT-licensed
+<a href="http://gabrielecirulli.github.io/2048/">2048</a>, which was based on
+<a href="https://itunes.apple.com/us/app/1024!/id823499224">1024 by Veewo Studio</a>
+and conceptually similar to <a href="http://asherv.com/threes/">Threes by Asher Vollmer</a>.
+
+    </p>
+  </div>
+
+  <script src="animframe_polyfill.js"></script>
+  <script src="keyboard_input_manager.js"></script>
+  <script src="html_actuator.js"></script>
+  <script src="grid.js"></script>
+  <script src="tile.js"></script>
+  <script src="local_score_manager.js"></script>
+  <script src="game_manager.js"></script>
+  <script src="application.js"></script>
+
+
+</div></div>
+
+
+</body></html>
